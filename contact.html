@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Course homepage - Heading hierarchy example</title>
+</head>
+
+<body>
+  <header>
+    <h1>Contact page</h1>
+  </header>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+    <section>
+      <h2>Message form</h2>
+      <form method="post" action="#" aria-label="Contact form">
+
+        <fieldset>
+          <legend>Your details</legend>
+
+          <p>
+            <label for="name">Full name (required)</label>
+            <input type="text" id="name" name="name" required>
+          </p>
+          <p>
+            <label for="email">Email (required)</label>
+            <input type="email" id="email" name="email" required>
+          </p>
+          <p>
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your message</legend>
+          <p>
+            <label for="subject">Subject (required)</label>
+            <input type="text" id="subject" name="subject" required aria-describedby="subject-hint">
+            <small id="subject-hint" class="form-hint">e.g. Lab 2, schedule, grading</small>
+          </p>
+
+          <p>
+            <label for="msg">Message (required)</label>
+            <textarea id="msg" name="message" rows="5" required></textarea>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>How did you hear about us?</legend>
+
+          <input type="radio" id="hear-course" name="hear" value="course">
+          <label for="hear-course">Course / university</label>
+          <br>
+          <input type="radio" id="hear-search" name="hear" value="search">
+          <label for="hear-search">Search / web</label>
+          <br>
+          <input type="radio" id="hear-other" name="hear" value="other">
+          <label for="hear-other">Other</label>
+        </fieldset>
+
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Maria Maiorescu · Web Design · 2026 · Semester II</p>
+  </footer>
+</body>
+
+</html>
