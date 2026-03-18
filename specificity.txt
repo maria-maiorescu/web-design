@@ -1,0 +1,66 @@
+CSS Specificity Notes
+=====================
+
+1) CSS properties for each paragraph and their source
+-----------------------------------------------------
+
+Paragraph A (<p>)
+Matches: p
+
+- color: gray -> element selector
+- font-size: 1rem -> element selector
+- font-family: Georgia, serif -> element selector
+- line-height: 1.4 -> element selector
+- padding: 4px 0 -> element selector
+
+Paragraph B (<p class="info">)
+Matches: p, .info
+
+- color: steelblue -> class selector
+- font-size: 1.25rem -> class selector
+- font-family: Arial, sans-serif -> class selector
+- line-height: 1.4 -> element selector
+- padding: 8px 14px -> class selector
+- background-color: #e8f4fd -> class selector
+- border-left: 5px solid steelblue -> class selector
+
+Paragraph C (<p id="warning">)
+Matches: p, #warning
+
+- color: darkred -> ID selector
+- font-size: 0.8rem -> ID selector
+- font-family: 'Courier New', monospace -> ID selector
+- line-height: 1.4 -> element selector
+- padding: 10px -> ID selector
+- font-style: italic -> ID selector
+- text-transform: uppercase -> ID selector
+- letter-spacing: 0.15em -> ID selector
+- border: 2px dashed darkred -> ID selector
+- background-color: #fff0f0 -> ID selector
+
+Paragraph D (<p class="info" id="warning">)
+Matches: p, .info, #warning, #warning.info
+
+- color: darkorange -> #warning.info
+- font-size: 1.1rem -> #warning.info
+- font-family: 'Courier New', monospace -> #warning
+- line-height: 1.4 -> p
+- padding: 10px -> #warning
+- background-color: #fff7e0 -> #warning.info
+- border: 2px solid darkorange -> #warning.info
+- font-style: normal -> #warning.info
+- letter-spacing: 0.03em -> #warning.info
+- text-transform: uppercase -> #warning
+
+2) Paragraph D (final values requested)
+----------------------------------------
+
+- Color: darkorange -> from #warning.info
+- Font-family: 'Courier New', monospace -> from #warning
+
+3) h1 (external vs internal CSS)
+--------------------------------
+
+- color -> internal CSS
+- font-style -> external CSS
+- padding -> external CSS

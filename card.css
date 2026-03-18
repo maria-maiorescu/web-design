@@ -1,0 +1,60 @@
+/* element selectors */
+body {
+    margin: 0;
+    background-color: #f4f4f8;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 10px 0 5px;
+}
+
+h2 {
+    margin: 0 0 15px;
+}
+
+/* id selector */
+#card {
+    width: 300px;
+    margin: 100px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* class selectors */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.name {
+    color: #5b20c0;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 16px;
+}
+
+/* more class selectors */
+.email {
+    display: block;
+    margin: 10px 0;
+    color: #2a7ae2;
+    text-decoration: none;
+}
+
+.github {
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+/* second id selector example */
+#card a:hover {
+    text-decoration: underline;
+}

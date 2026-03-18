@@ -1,0 +1,43 @@
+GitHub:
+
+- deschizi github.com -> profilul tau -> organizations
+- apare CS-WD-UVT-2026 -> click pe el -> apare repository numit lab1-wd... -> click pe el
+- click pe butonul verde CODE -> copy url address (https://github.com/CS-WD-UVT-2026/lab1-wd-ie-maria-owd.git <- asta e exemplul meu)
+
+Instalezi Git (pe macOs) - (eventual mai intrebi chat cum instalezi: important!!! trebuie instalat in acelasi loc cu VS Code (adica nu unu pe mac si altu pe windows; fa-le pe toate pe mac, ca mai mult te complici pe windows)):
+
+- descizi terminal (linie de comanda)
+- scrii: git --version (Dacă Git nu e instalat, macOS îți va afișa automat:
+	“The 'git' command requires the command line developer tools…”)
+- click install (wait putin)
+
+
+
+VS Code:
+
+--> repository-ul privat:
+- daca nu ai alte chestii deschise si e fereastra principala -> click pe clone git repository/ CTRL + SHIFT + P (cauti clone -> git:clone)/ in terminal (git clone si mai pui si URL-ul)
+- dupa ce dai git clone -> in README.md (exercitiul 1.2 din instructiunile lui)
+- exercitiul 2: index.html -> adaugi poza (ai dat de el: Code to copy)
+- butonul de source control (al treilea simbol de pe stanga, ce arata ca un y)
+ -> dai pe plusul de la toate fisierele -> dai pe plusul de la Changes -> adaugi ceva comentariu -> Commit -> Sync changes 
+ 
+ 
+Deschizi Github.com:
+
+- click pe profilul tau -> repositories -> butonul verde de New -> ii dai tu ce nume vrei -> Choose visibility (public!!) ->jos de tot, butonul verde: Create repository
+- tot la repositories de la profil -> intri pe cel nou creat -> buton verde Code -> copy URL address
+
+Back to VS Code:
+
+- new Window -> clone (ca mai sus)  
+- copiezi toate fisierele din repo privat (fara README)
+- butonul de source control (al treilea simbol de pe stanga, ce arata ca un y)
+ -> dai pe plusul de la toate fisierele -> dai pe plusul de la Changes -> adaugi ceva comentariu -> Commit -> Sync changes 
+
+Deschizi Github.com:
+
+- deschizi (sau e deschis) repo public creat anterior (aici trebuie sa iti apara fisierele copiate)
+- Settings -> Pages (pe partea stanga) -> unde scrie Branch -> selectezi main branch si root -> save 
+- wait 3 min -> refresh 
+- sus trebuie sa-ti apara: Your site is live at... -> si ala e linkul final  
