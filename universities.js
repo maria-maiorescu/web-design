@@ -1,5 +1,4 @@
-//const API_URL = "http://universities.hipolabs.com/search?country=Romania";
-const API_URL = "https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json";
+const DATA_URL = "https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json";
 const COUNTRY = "Romania";
 const status = document.getElementById("status");
 const tbody = document.getElementById("tbody");
@@ -28,9 +27,9 @@ async function loadUniversities() {
     setStatus("Loading…");
     tbody.innerHTML = "";
     try {
-        const res = await fetch(API_URL);
+        const res = await fetch(DATA_URL);
         const data = await res.json();
-        all = data;
+        all = data.filter(u => u.country === COUNTRY);
         render(all);
         setStatus(`Loaded (${all.length} results).`);
     } catch {
