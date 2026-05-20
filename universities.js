@@ -1,5 +1,5 @@
 //const API_URL = "http://universities.hipolabs.com/search?country=Romania";
-const DATA_URL = "https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json";
+const API_URL = "https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json";
 const COUNTRY = "Romania";
 const status = document.getElementById("status");
 const tbody = document.getElementById("tbody");
